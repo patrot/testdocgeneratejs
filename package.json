@@ -1,17 +1,35 @@
 {
-  "name": "testdocgeneratejs",
-  "version": "0.0.0",
-  "private": true,
-  "scripts": {
-    "start": "node ./bin/www"
+  "name": "ptscapegoat",
+  "version": "1.0.0",
+  "description": "A small library providing utility methods to escape and unescape HTML entities",
+  "main": "src/index.js",
+  "bin": {
+    "testdocgenerate": "src/testdocgenerateCLI.js"
   },
-  "dependencies": {
-    "body-parser": "~1.12.4",
-    "cookie-parser": "~1.3.5",
-    "debug": "~2.2.0",
-    "express": "~4.12.4",
-    "jade": "~1.9.2",
-    "morgan": "~1.5.3",
-    "serve-favicon": "~2.2.1"
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/patrot/testdocgeneratejs.git"
+  },
+  "keywords": [
+    "escape",
+    "unescape",
+    "html"
+  ],
+  "author": "Peter Trotter <patrotter@gmail.com>",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/patrot/testdocgeneratejs/LICENSE-MIT"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/patrot/testdocgeneratejs/issues"
+  },
+  "devDependencies": {
+    "mocha": "~1.16.2",
+    "chai": "~1.8.1"
   }
 }
